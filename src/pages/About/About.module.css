@@ -1,0 +1,109 @@
+.about {
+  min-height: 100vh;
+}
+
+.aboutHero {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+}
+
+.aboutContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.aboutText h1 {
+  font-size: 2.5rem;
+  color: #1565c0;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #424242;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.features h3 {
+  color: #1976d2;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  padding: 0.5rem 0;
+  color: #424242;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.features li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.aboutImage {
+  text-align: center;
+}
+
+.aboutImg {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.missionSection {
+  padding: 4rem 0;
+  background: white;
+}
+
+.missionContent {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.missionContent h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.missionContent p {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .aboutContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .aboutText h1 {
+    font-size: 2rem;
+  }
+
+  .missionContent h2 {
+    font-size: 2rem;
+  }
+
+  .missionContent p {
+    font-size: 1.1rem;
+  }
+}
